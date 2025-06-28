@@ -1,6 +1,7 @@
 package com.mycompany.rcbeautyok.igu;
 
 import com.mycompany.rcbeautyok.logica.Controladora;
+import java.awt.HeadlessException;
 
 public class Pantalla extends javax.swing.JFrame {
     Controladora control = new Controladora();
@@ -37,6 +38,7 @@ public class Pantalla extends javax.swing.JFrame {
         btnGuardar = new javax.swing.JButton();
         cmbMes = new javax.swing.JComboBox<>();
         cmbServicio = new javax.swing.JComboBox<>();
+        btnVerdatos = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -155,7 +157,7 @@ public class Pantalla extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(255, 153, 255));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI Semibold", 1, 24)); // NOI18N
-        jLabel8.setText("Fecha y Hora deseada:");
+        jLabel8.setText("Día           Mes           Hora deseada:");
 
         jLabel9.setFont(new java.awt.Font("Segoe UI Semibold", 1, 24)); // NOI18N
         jLabel9.setText("Pago de la Seña:");
@@ -171,7 +173,7 @@ public class Pantalla extends javax.swing.JFrame {
 
         cmbDia.setBackground(new java.awt.Color(255, 204, 255));
         cmbDia.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        cmbDia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        cmbDia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
         cmbDia.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         cmbHora.setBackground(new java.awt.Color(255, 204, 255));
@@ -179,9 +181,10 @@ public class Pantalla extends javax.swing.JFrame {
         cmbHora.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "08:00", "10:00", "14:00", "16:00", "18:00" }));
         cmbHora.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        btnLimpiar.setBackground(new java.awt.Color(204, 0, 204));
-        btnLimpiar.setFont(new java.awt.Font("Segoe UI Semibold", 1, 36)); // NOI18N
-        btnLimpiar.setText("Limpiar");
+        btnLimpiar.setBackground(new java.awt.Color(255, 0, 102));
+        btnLimpiar.setFont(new java.awt.Font("Segoe UI Emoji", 1, 36)); // NOI18N
+        btnLimpiar.setForeground(new java.awt.Color(255, 255, 255));
+        btnLimpiar.setText("Limpiar🫧");
         btnLimpiar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -189,9 +192,10 @@ public class Pantalla extends javax.swing.JFrame {
             }
         });
 
-        btnGuardar.setBackground(new java.awt.Color(204, 0, 204));
-        btnGuardar.setFont(new java.awt.Font("Segoe UI Semibold", 1, 36)); // NOI18N
-        btnGuardar.setText("Guardar");
+        btnGuardar.setBackground(new java.awt.Color(255, 0, 102));
+        btnGuardar.setFont(new java.awt.Font("Segoe UI Emoji", 1, 36)); // NOI18N
+        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardar.setText("Guardar💅");
         btnGuardar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,40 +205,56 @@ public class Pantalla extends javax.swing.JFrame {
 
         cmbMes.setBackground(new java.awt.Color(255, 204, 255));
         cmbMes.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        cmbMes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
+        cmbMes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
         cmbMes.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        cmbServicio.setBackground(new java.awt.Color(255, 204, 255));
         cmbServicio.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         cmbServicio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "MANICURE", "PEDICURE", "PESTAÑAS", "FACIALES" }));
         cmbServicio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        btnVerdatos.setBackground(new java.awt.Color(255, 0, 102));
+        btnVerdatos.setFont(new java.awt.Font("Segoe UI Emoji", 1, 36)); // NOI18N
+        btnVerdatos.setForeground(new java.awt.Color(255, 255, 255));
+        btnVerdatos.setText("Ver Datos👁️");
+        btnVerdatos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        btnVerdatos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerdatosActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(17, 17, 17)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel8)
+                    .addComponent(cmbPagoSenia, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
+                            .addComponent(jLabel9)
                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(cmbDia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(cmbMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(cmbDia, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(cmbHora, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(cmbPagoSenia, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel9)))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(186, 186, 186)
-                        .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(cmbMes, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(28, 28, 28)
+                        .addComponent(cmbHora, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(109, 109, 109)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel10)
-                    .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cmbServicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(300, Short.MAX_VALUE))
+                .addContainerGap(292, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(61, 61, 61)
+                .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(130, 130, 130)
+                .addComponent(btnGuardar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnVerdatos)
+                .addGap(59, 59, 59))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -253,11 +273,12 @@ public class Pantalla extends javax.swing.JFrame {
                 .addComponent(jLabel9)
                 .addGap(18, 18, 18)
                 .addComponent(cmbPagoSenia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(53, 53, 53))
+                    .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnVerdatos, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35))
         );
 
         jLabel11.setIcon(new javax.swing.ImageIcon("E:\\PROGRAMACIÓN\\PARCIAL\\Análisis Estructurado\\rc_beauty.png")); // NOI18N
@@ -297,7 +318,7 @@ public class Pantalla extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1585, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -322,26 +343,48 @@ public class Pantalla extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+    try {
         String nomCliente = txtNombre.getText();
         String apelCliente = txtApellido.getText();
         String tel = txtTelefono.getText();
-        
+
         String diaReserva = (String) cmbDia.getSelectedItem();
         String mesReserva = (String) cmbMes.getSelectedItem();
         String servicioReserva = (String) cmbServicio.getSelectedItem();
-        char genReserva = (char) cmbGenero.getSelectedItem();
+        // Corregir casting de género:
+        String genStr = (String) cmbGenero.getSelectedItem();
+        char genReserva = (genStr != null && !genStr.isEmpty()) ? genStr.charAt(0) : ' ';
         String horaReserva = (String) cmbHora.getSelectedItem();
-        String seniaReserva =  (String) cmbPagoSenia.getSelectedItem();
-        
+        String seniaReserva = (String) cmbPagoSenia.getSelectedItem();
+
+        System.out.println("DEBUG: datos recolectados:");
+        System.out.println("  nombre=" + nomCliente + ", apellido=" + apelCliente 
+            + ", tel=" + tel + ", dia=" + diaReserva 
+            + ", mes=" + mesReserva + ", servicio=" + servicioReserva 
+            + ", genero=" + genReserva + ", hora=" + horaReserva 
+            + ", senia=" + seniaReserva);
+
         control.guardar(nomCliente, apelCliente, tel, diaReserva, mesReserva, 
                 servicioReserva, genReserva, horaReserva, seniaReserva);
-        
+        javax.swing.JOptionPane.showMessageDialog(this, "Guardado con éxito");
+    } catch (HeadlessException ex) {
+        javax.swing.JOptionPane.showMessageDialog(this, 
+            "Error al guardar: " + ex.getMessage());
+    }
+
     }//GEN-LAST:event_btnGuardarActionPerformed
+
+    private void btnVerdatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerdatosActionPerformed
+        VerDatos pantalla = new VerDatos();
+        pantalla.setVisible(true);
+        pantalla.setLocationRelativeTo(null);
+    }//GEN-LAST:event_btnVerdatosActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnLimpiar;
+    private javax.swing.JButton btnVerdatos;
     private javax.swing.JComboBox<String> cmbDia;
     private javax.swing.JComboBox<String> cmbGenero;
     private javax.swing.JComboBox<String> cmbHora;

@@ -1,13 +1,17 @@
+com\mycompany\rcbeautyok\igu\VerDatos$2.class
 com\mycompany\rcbeautyok\persistencia\ReservaJpaController.class
 com\mycompany\rcbeautyok\igu\Pantalla$1.class
 com\mycompany\rcbeautyok\logica\Reserva.class
 com\mycompany\rcbeautyok\persistencia\ControladoraPersis.class
 com\mycompany\rcbeautyok\persistencia\exceptions\IllegalOrphanException.class
 com\mycompany\rcbeautyok\igu\Pantalla$2.class
+com\mycompany\rcbeautyok\igu\VerDatos.class
 com\mycompany\rcbeautyok\persistencia\exceptions\NonexistentEntityException.class
 com\mycompany\rcbeautyok\persistencia\ServicioJpaController.class
 com\mycompany\rcbeautyok\RcBeautyOk.class
+com\mycompany\rcbeautyok\igu\Pantalla$3.class
 com\mycompany\rcbeautyok\logica\Servicio.class
 com\mycompany\rcbeautyok\logica\Controladora.class
 com\mycompany\rcbeautyok\igu\Pantalla.class
+com\mycompany\rcbeautyok\igu\VerDatos$1.class
 com\mycompany\rcbeautyok\persistencia\exceptions\PreexistingEntityException.class

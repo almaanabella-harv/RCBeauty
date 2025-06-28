@@ -1,6 +1,7 @@
 package com.mycompany.rcbeautyok.logica;
 
 import com.mycompany.rcbeautyok.persistencia.ControladoraPersis;
+import java.util.List;
 
 public class Controladora {
     ControladoraPersis controlPersi = new ControladoraPersis();
@@ -28,5 +29,9 @@ public class Controladora {
         
         controlPersi.guardar(servicio, reserva);
     
+    }
+ 
+    public List<Reserva> traerClientes() {
+        return controlPersi.traerClientes();
     }
 }
